@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "node ./src/start-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "koa": "^2.13.4",
+    "koa-mount": "^4.0.0",
+    "koa-proxies": "^0.12.2",
+    "koa-static": "^5.0.0",
+    "shelljs": "^0.8.5"
+  }
+}
