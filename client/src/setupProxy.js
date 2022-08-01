@@ -1,5 +1,5 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
- 
+
 module.exports = function (app) {
   app.use(
     '/v2',
@@ -10,7 +10,7 @@ module.exports = function (app) {
       onProxyReq: function (proxyReq, req) {
         console.log(req.path);
       },
-    })
+    }),
   );
 
   app.use(
@@ -24,6 +24,6 @@ module.exports = function (app) {
       onProxyReq: function (proxyReq, req) {
         console.log(req.path);
       },
-    })
+    }),
   );
 };

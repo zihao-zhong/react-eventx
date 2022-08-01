@@ -1,5 +1,4 @@
 import Home from '../pages/home/home';
-// import { PathRouteProps } from 'react-router';
 
 export interface IRouteBase {
   path: string;
@@ -10,7 +9,7 @@ export interface IRouteBase {
 }
 
 export interface IRoute extends IRouteBase {
-  children?: IRouteBase[]
+  children?: IRouteBase[];
 }
 
 const routes: IRoute[] = [
@@ -18,6 +17,6 @@ const routes: IRoute[] = [
     path: '/',
     main: Home,
   },
-]
+];
 
 export default routes;
