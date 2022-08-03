@@ -1,7 +1,5 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const chalk = require('chalk');
-const shell = require('shelljs');
+import chalk from 'chalk';
+import shell from 'shelljs';
 
 async function startBuild() {
   try {

@@ -1,6 +1,7 @@
-const { createProxyMiddleware } = require('http-proxy-middleware');
+// const { createProxyMiddleware } = require('http-proxy-middleware');
+import { createProxyMiddleware } from 'http-proxy-middleware';
 
-module.exports = function (app) {
+export default function (app) {
   app.use(
     '/v2',
     createProxyMiddleware({
@@ -26,4 +27,4 @@ module.exports = function (app) {
       },
     }),
   );
-};
+}
